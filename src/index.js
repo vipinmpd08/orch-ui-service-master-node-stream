@@ -5,7 +5,6 @@ const { promisify } = require('util');
 const { Readable } = require('stream');
 const { createReadStream } = require('fs');
 const app = express();
-const host = '0.0.0.0';
 const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -117,4 +116,4 @@ app.get('/orchestrator/api/master-data', async (req, res) => {
     console.log("Completed master data request")
 });
 
-app.listen(port, host, () => console.log(`Mock server listening on port ${port}`));
+app.listen(port, () => console.log(`Mock server listening on port ${port}`));
