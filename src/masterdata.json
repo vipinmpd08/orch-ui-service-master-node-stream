@@ -1,0 +1,16 @@
+[
+    {
+        "name": "runInterval",
+        "value": "15",
+        "paramDesc": "Run Interval",
+        "inputType": "dropdown",
+        "possibleValues": [15, 20, 25, 30],
+    },
+    {
+        "name": "runInterval",
+        "value": "15",
+        "paramDesc": "Run Interval",
+        "inputType": "textBox",
+        "possibleValues": "",
+    },
+]
